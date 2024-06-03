@@ -1,0 +1,7 @@
+/* The nested syntax is available with the postcss config & plugin settings */
+button {
+    background-color: rebeccapurple;
+    &:hover {
+        background-color: blanchedalmond;
+    }
+}
