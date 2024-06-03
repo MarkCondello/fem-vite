@@ -18,11 +18,11 @@ export const initializeCounter = (doc = globalThis.document) => {
     count++;
     render();
     if (count > 5) {
-      import('./banner.js').then(({ banner }) => {
+      import('./banner.ts').then(({ banner }) => {
         banner('You have clicked the increment button too many times!');
       });
     } else {
-      import('./banner.js').then(({ banner }) => {
+      import('./banner.ts').then(({ banner }) => {
         banner();
       });
     }
@@ -32,11 +32,11 @@ export const initializeCounter = (doc = globalThis.document) => {
     count--;
     render();
     if (count < 0) {
-      import('./banner.js').then(({ banner }) => {
+      import('./banner.ts').then(({ banner }) => {
         banner('You have clicked the decrement button too many times!');
       });
     } else {
-      import('./banner.js').then(({ banner }) => {
+      import('./banner.ts').then(({ banner }) => {
         banner();
       });
     }
