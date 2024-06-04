@@ -305,3 +305,20 @@ Or, if you use husky, you can automate this whenever you commit a change to a CS
 
 npm run check:css
 ```
+
+## Modifying images
+
+Installed in this project is the [vite-image-tools plugin](https://github.com/JonasKruckenberg/imagetools/tree/main/docs) which provides various directives that can be added with JS.
+More details can be found (here)[https://www.npmjs.com/package/vite-imagetools] and course info (here)[https://vite-workshop.vercel.app/image-tools].
+
+## Vite module import helpers
+
+When importing css or js modules we can use query params to modify the import.
+
+`import Module from './SOME_JS_MODULE.js?raw'`
+Will provide the raw code which is not interpretted by vite.
+
+`import Module from './SOME_CSS_MODULE.module.css?inline'`
+Will also provide the raw CSS code which is not interpretted by vite.
+
+`?url` is also provided which returns the path to the resource.
